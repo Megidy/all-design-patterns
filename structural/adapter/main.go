@@ -25,7 +25,7 @@ type PaymentAdapter struct {
 	ps *PaymentSystem
 }
 
-func NewPaymentAdapter(ps *PaymentSystem) *PaymentAdapter {
+func NewPaymentAdapter(ps *PaymentSystem) PaymentProcessor {
 	return &PaymentAdapter{
 		ps: ps,
 	}
